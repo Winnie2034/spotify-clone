@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect } from "react";
 import SpotifyWebApi from "spotify-web-api-js";
 import "./App.css";
 import Login from "./Components/Login";
@@ -15,7 +15,6 @@ function App() {
   useEffect(() => {
     const hash = getTokenFromUrl();
     window.location.hash = "";
-
     const _token = hash.access_token;
 
     if (_token) {
@@ -26,12 +25,17 @@ function App() {
 
       spotify.setAccessToken(_token);
 
-      console.log(spotify);
-
       spotify.getMe().then((user) => {
         dispatch({
           type: "SET_USER",
           user: user,
+        });
+      });
+
+      spotify.getUserPlaylists().then((playlists) => {
+        dispatch({
+          type: "SET_PLAYLISTS",
+          playlists: playlists,
         });
       });
     }
