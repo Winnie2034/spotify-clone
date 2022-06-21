@@ -44,6 +44,15 @@ function Footer() {
             <Slider aria-labelledby="continuous-slider" />
           </Grid>
         </Grid>
+        {/* <div className="right__icon1">
+          <PlaylistPlayIcon />
+        </div>
+        <div className="right__icon2">
+          <VolumeDownIcon />
+        </div>
+        <div className="slider">
+          <Slider aria-labelledby="continuous-slider" />
+        </div> */}
       </div>
     </div>
   );
