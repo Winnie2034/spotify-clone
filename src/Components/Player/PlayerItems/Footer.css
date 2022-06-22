@@ -35,7 +35,7 @@
   color: white;
 }
 
-/* .right__icon1 {
+.right__icon1 {
   display: flex;
   flex: 0.1;
 }
@@ -47,7 +47,7 @@
   display: flex;
   padding-left: 15px;
   flex: 0.8;
-} */
+}
 
 .footer__albumLogo {
   height: 60px;
