@@ -2,7 +2,7 @@ import React from "react";
 import Sidebar from "./PlayerItems/Sidebar/Sidebar";
 import "./Player.css";
 import Body from "./PlayerItems/Body/Body";
-import Footer from "./PlayerItems/Footer";
+import Footer from "./PlayerItems/Footer/Footer";
 
 function Player({ spotify }) {
   return (

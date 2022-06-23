@@ -10,7 +10,7 @@ import { Grid, Slider } from "@mui/material";
 import PlaylistPlayIcon from "@mui/icons-material/PlaylistPlay";
 import VolumeDownIcon from "@mui/icons-material/VolumeDown";
 import { useEffect } from "react";
-import { useDataLayerValue } from "../../../Helpers/DataLayer";
+import { useDataLayerValue } from "../../../../Helpers/DataLayer";
 
 function Footer({ spotify }) {
   const [{ token, item, playing }, dispatch] = useDataLayerValue();

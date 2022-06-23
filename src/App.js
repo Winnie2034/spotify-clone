@@ -16,6 +16,7 @@ function App() {
     const hash = getTokenFromUrl();
     window.location.hash = "";
     const _token = hash.access_token;
+    // console.log(spotify);
 
     if (_token) {
       dispatch({
